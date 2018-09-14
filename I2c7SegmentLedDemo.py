@@ -1,85 +1,48 @@
 # -*- coding: utf-8 -*-
 
-# Notes
-#   1. You must enable I2C on your Raspberry Pi board (see your particular operating system documentation).
-#       On Raspian: Menu...Preferences...Raspberry Pi Configuration...Interfaces...Enable I2C
-#   2. If using Python 3, you will need to install python3-smbus:
-#       sudo apt-get install python3-smbus
-
 '''
-  I2c7SegmentLed.py - class library for using 7 Segment Leds
+    I2c7SegmentLedDemo.py
 
-  Written by: Gary Muhonen  gary@wht.io
+    Written by: Gary Muhonen  gary@dcity.org
 
-  versions
-    1.0.0 - 7/31/2016
-      Original Release.
+    Versions
+        1.0.0 - 7/31/2016
+            Original Release.
+        1.0.1 - 9/1/2018
+            Transfer to GM, and some minor changes
 
+    Short Description:
 
-  Short Description:
+        These files provide a software library and demo program for the Raspberry Pi.
 
-    These files provide software for the Raspberry Pi, using the Python2 or Python3
-    The library files provide useful functions to make it easy
-    to communicate with 7 Segment LED display modules that use the AMS AS1115
-    LED controller chip. This chip uses the I2C communication protocol. The demo
-    program shows the usage of the functions in the library.
+        The library files provide useful functions to make it easy
+        to communicate with 7 Segment LEDs
+        that use the I2C communication protocol. The demo
+        program shows the usage of the functions in the library.
 
-    The library files and demo will work with 7 segment LED displays with up to
-    8 digits. The LED display must use the AMS AS1115 controller chip.
-
-    See the links below for installation and usage information.
-
-    Project Details:
-    * Library installation and usage:                  http://wht.io/portfolio/i2c-7-segment-led-library/
-    * .8 inch,  7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot8inch
-    * .56 inch, 7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot56inch
-    * .36 inch, 7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot36inch
-
-    Software Github repositories (library and demo programs):
-    * Arduino library files:      https://github.com/wht-io/i2c-7-segment-led-library-arduino.git
-    * Particle library files:     https://github.com/wht-io/i2c-7-segment-led-library-particle.git
-    * Raspberry Pi library files: https://github.com/wht-io/i2c-7-segment-led-library-raspberrypi.git
-
-    Hardware Design Github repositories (schematic and board layouts):
-    * .8 inch,  7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot8inch
-    * .56 inch, 7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot56inch
-    * .36 inch, 7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot36inch    See the project details links below for installation and usage information.
-
-    Github repositories:
-    * Raspberry Pi library files:  https://github.com/wht-io/i2c-7-segment-led-raspberrypi.git
-    * Arduino library files:  https://github.com/wht-io/i2c-7-segment-led-arduino.git
-    * Particle library files: https://github.com/wht-io/i2c-7-segment-led-particle.git
-
-    Project Details:
-
-    * Library installation and usage: http://wht.io/portfolio/i2c-7-segment-led-library/
-    * 7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-board/
+        The 7 Segment LED must connect to the I2C bus using a AMS AS1115 controller chip.
+        A backback board with the AMS AS1115 chip is available and details are in the link below.
 
 
+    https://www.dcity.org/portfolio/i2c-7-segment-led-library/
+    This link has details including:
+        * software library installation for use with Arduino, Particle and Raspberry Pi boards
+        * list of functions available in these libraries
+        * a demo program (which shows the usage of most library functions)
+        * info on 7 segment LED displays that work with this software
+        * hardware design for a backpack board for 7 segment LEDs, available on github
+        * info on backpack “bare” pc boards available from OSH Park.
 
-  Windy Hill Technology LLC code, firmware, and software is released under the
-  MIT License (http://opensource.org/licenses/MIT).
 
-  The MIT License (MIT)
+    This demo program is public domain. You may use it for any purpose.
+        NO WARRANTY IS IMPLIED.
 
-  Copyright (c) 2016 Windy Hill Technology LLC
+    License Information:  https://www.dcity.org/license-information/
 
-  Permission is hereby granted, free of charge, to any person obtaining a
-  copy of this software and associated documentation files (the "Software"),
-  to deal in the Software without restriction, including without limitation
-  the rights to use, copy, modify, merge, publish, distribute, sublicense,
-  and/or sell copies of the Software, and to permit persons to whom the
-  Software is furnished to do so, subject to the following conditions:
-  The above copyright notice and this permission notice shall be included
-  in all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-  DEALINGS IN THE SOFTWARE.
+    Notes:
+        1. You must enable I2C on your Raspberry Pi board (see your particular operating system documentation).
+            On Raspian: Menu...Preferences...Raspberry Pi Configuration...Interfaces...Enable I2C
+        2. This software was tested on a RASPBERRY PI 3 MODEL B, running Rasbian and Python 3.5.2
 
 '''
 

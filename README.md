@@ -1,38 +1,25 @@
-### I2c7SegmentLed - Raspberry Pi Python library for controlling I2C 7 Segment Led Displays
+
+### I2c7SegmentLed - Raspberry Pi library for controlling I²C 7 Segment Led Displays
 
 <div style="text-align: center;">
-
 <div style="display: inline-block; margin-right: 5px;">
-<img class="size-thumbnail wp-image-176" src="http://wht.io/wp-content/uploads/projects/i2c-7-segment-led-dot56inch/i2c-7-segment-led-dot56inch-seeeduino.jpg" alt="i2c led backpack" width="300" height="300" />
+<img  src="https://www.dcity.org/dcity/wp-content/uploads/projects/i2c-7-segment-led-dot56inch/i2c-7-segment-led-dot56inch-seeeduino.jpg" alt="i2c LED display" width="300" height="300" />
+</div>
+<div style="display: inline-block; margin-right: 5px;">
+<img  src="https://www.dcity.org/dcity/wp-content/uploads/projects/i2c-7-segment-led-dot56inch/i2c-7-segment-led-dot56inch-front.jpg" alt="i2c LED display" width="300" height="300" />
+</div>
+<div style="display: inline-block; margin-right: 5px;">
+<img  src="https://www.dcity.org/dcity/wp-content/uploads/projects/i2c-7-segment-led-dot56inch/i2c-7-segment-led-dot56inch-back.jpg" alt="i2c LED display" width="300" height="300" />
+</div>
 </div>
 
-</div>
+**[This link has details](https://www.dcity.org/portfolio/i2c-7-segment-led-library/) including:**
+* software library installation for use with Arduino, Particle and Raspberry Pi boards
+* list of functions available in these libraries
+* a demo program (which shows the usage of most library functions)
+* info on 7 segment LED displays that work with this software
+* hardware design for a backpack board for 7 segment LEDs, available on github
+* info on backpack “bare” pc boards available from OSH Park.
 
-#### Short Description:
-
-This library works with Raspberry Pi boards and it provides many functions to communicate with 7 Segment LED display modules that use the AMS AS1115 chip. This chip uses the I2C communication protocol.
-
-The library will work with 7 Segment displays up to 8 digits wide. The displays must use the AMS AS1115 LED controller chip.
-
-A demo program demonstrates all of the functions in the I2cCharDisplay library.
-
-See the links below for installation and usage information.
-
-#### Project Details:
-* Library installation and usage:                  http://wht.io/portfolio/i2c-7-segment-led-library/
-* .8 inch,  7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot8inch
-* .56 inch, 7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot56inch
-* .36 inch, 7 Segment module hardware information: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot36inch
-
-#### Software Github repositories (library and demo programs):
-* Arduino library files:      https://github.com/wht-io/i2c-7-segment-led-library-arduino.git
-* Particle library files:     https://github.com/wht-io/i2c-7-segment-led-library-particle.git
-* Raspberry Pi library files: https://github.com/wht-io/i2c-7-segment-led-library-raspberrypi.git
-
-#### Hardware Design Github repositories (schematic and board layouts):
-* .8 inch,  7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot8inch
-* .56 inch, 7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot56inch
-* .36 inch, 7 Segment module design: http://wht.io/portfolio/i2c-7-segment-led-backpack-dot36inch
-
-
-**See LICENSE.md for license information.**
+**License Information**
+License Information is [here](https://www.dcity.org/license-information/).
